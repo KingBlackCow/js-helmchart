@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: redis-config
+  namespace: ${네임스패이스}
+data:
+  REDIS_HOST: "redis-master.infra.svc.cluster.local"
+  REDID_PORT: "6379"
